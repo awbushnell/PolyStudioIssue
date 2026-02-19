@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFHostingWin32Control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFHostingWin32Control"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="234"
+        Width="416"
+        Loaded="On_UIReady">
+
+    <DockPanel Margin="0,0,35,2">
+        <Border Name="ControlHostElement"
+                Width="200"
+                Height="200"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                BorderBrush="LightGray"
+                BorderThickness="3"
+                DockPanel.Dock="Right" />
+        <StackPanel Width="170">
+            <TextBlock Margin="10,10,10,10">Selected Text: <TextBlock  Name="selectedText" /></TextBlock>
+            <TextBlock Margin="10,10,10,10">Number of Items: <TextBlock  Name="numItems" /></TextBlock>
+            <Button HorizontalAlignment="Center"
+                    Click="ToggleListEnabledState"
+                    Width="150"
+                    Margin="10,10,10,10">Toggle List Enabled</Button>
+        </StackPanel>
+    </DockPanel>
+</Window>
