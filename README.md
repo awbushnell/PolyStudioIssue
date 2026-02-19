@@ -1,1 +1,1 @@
-"# PolyStudioIssue" 
+# PolyStudioIssue
